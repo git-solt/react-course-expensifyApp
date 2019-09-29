@@ -13,7 +13,6 @@ import 'react-dates/lib/css/_datepicker.css'
 
 const store = configureStore()
 
-
 // store.subscribe(() => {
 //   const state = store.getState()
 //   console.log(getVisibleExpenses(state.expenses, state.filters))
