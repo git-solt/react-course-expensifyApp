@@ -6,7 +6,7 @@ import selectExpenses from '../selectors/expenses'
 
 
 
-const ExpenseSummary = ({ expenseCount, expensesTotal }) => {
+export const ExpenseSummary = ({ expenseCount, expensesTotal }) => {
   const expenseWord = expenseCount === 1 ? 'expense' : 'expenses'
   const formattedExpensesTotal = numeral(expensesTotal / 100).format('$0,0.00')
   return (
