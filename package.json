@@ -11,6 +11,11 @@
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
+  "engines": {
+    "node": "10.16.3",
+    "yarn": "1.x",
+    "npm": "6.x"
+  },
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "6.26.3",
