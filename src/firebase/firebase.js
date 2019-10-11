@@ -1,6 +1,6 @@
 
 import * as firebase from 'firebase'
-import moment from 'moment'
+
 
 //asteriks for alle importene lagret på firebase variabelen
 
@@ -22,7 +22,9 @@ firebase.initializeApp(config)
 
 const database = firebase.database()
 
-export { firebase, database as default }
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
+
+export { firebase, googleAuthProvider, database as default }
 
 
 // child_removed
