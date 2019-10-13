@@ -1,0 +1,33 @@
+
+.button {
+  background-color: $light-blue;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 300;
+  font-size: $font-size-large;
+  padding: $s-size;
+}
+
+.button--secondary {
+  background: #888888;
+}
+
+.button--link {
+  background: none;
+}
+
+.button__navigation {
+  border-radius: 5px;
+  padding: 0 $m-size;
+  color: white;
+  margin: 0 0 $m-size ;
+  text-decoration: none;
+
+
+}
+
+.is-active {
+  font-weight: 900;
+  text-decoration: underline;
+}

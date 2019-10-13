@@ -6,18 +6,29 @@ import selectedExpenses from '../selectors/expenses'
 
 
 export const ExpenseList = (props) => (
-  <div>
-    {
-      props.expenses.length === 0 ? 
-      <p>No expenses listed</p>
-    : props.expenses.map((cur) =>
-        <ExpenseListItem
-          key={cur.id}
-          {...cur}
+  <div className="content-container">
+    <div className="list-header">
+      <div className="show-for-small-vp">Expenses</div>
+      <div className="show-for-large-vp">Expense</div>
+      <div className="show-for-large-vp">Amount</div>
+    </div>
+    <div>
+    </div>
+    <div className="list-body">
+      {
+        props.expenses.length === 0 ?
+          <div className="list-item list-item--message">
+            <span>No Expenses</span>
+          </div>
+          : props.expenses.map((cur) =>
+            <ExpenseListItem
+              key={cur.id}
+              {...cur}
 
-        />)
-    }
-    {}
+            />)
+      }
+    </div>
+
   </div>
 )
 
